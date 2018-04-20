@@ -76,7 +76,17 @@ from haishoku.haishoku import Haishoku
 Haishoku.showPalette( image )
 ```
 
-it will open a temporary image to show the palette.
+This method now saves the image of the palette as a .JPEG, instead of displaying a temporary .BMP image.<br/> The generated .JPEG can be accessed outside of the package like so:
+```python
+from haishoku.haishoku import Haishoku
+import haishoku.haillow
+
+#generates the palette
+Haishoku.showPalette(comment.submission.url)
+
+palette_image = haishoku.haillow.image_name
+```
+
 
 ### 中文文档
 
