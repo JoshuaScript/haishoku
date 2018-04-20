@@ -1,4 +1,5 @@
 """ A setuptools based setup module.
+    https://github.com/JoshuaScript/haishoku-mod
     https://github.com/LanceGin/haishoku
 """
 
@@ -15,22 +16,22 @@ here = path.abspath(path.dirname(__file__))
 #     long_description = f.read()
 
 setup(
-    name='haishoku',
+    name='haishoku-mod',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
     version='1.1.7',
 
-    description='A development tool for grabbing the dominant color or representative color palette from an image.',
+    description='A fork of https://github.com/LanceGin/haishoku that\'s been modified to work with my Reddit Bot.',
     long_description='Haishoku is a development tool for grabbing the dominant color or representative color palette from an image, it depends on Python3 and Pillow.',
 
     # The project's main homepage.
-    url='https://github.com/LanceGin/haishoku',
+    url='https://github.com/JoshuaScript/haishoku-mod',
 
     # Author details
-    author='lancegin',
-    author_email='gin.lance.inside@hotmail.com',
+    author='lancegin, JoshuaScript',
+    author_email='gin.lance.inside@hotmail.com, joshua.rabiu@gmail.com',
 
     # Choose your license
     license='MIT',
