@@ -7,6 +7,15 @@
 
 from PIL import Image
 import urllib.request,io
+from base64 import b64encode
+from os import urandom
+
+#generates a sequence of bytes that will be converted to alphanumeric characters
+byte_soup = urandom(64)
+#converts the byte sequence to alphanumeric characters
+alpha_soup = b64encode(byte_soup).decode("utf-8")
+#generates a random, 7-digit alphanumeric string for the image name
+image_name = alpha_soup[0:8]
 
 def get_image(image_path):
     # if the image_path is a remote url, read the image at first
@@ -65,4 +74,7 @@ def joint_image(images):
         palette.paste(image, (init_ul, 0))
         init_ul += image.width
 
-    palette.show()
+    #Saves the generated image as a jpeg file so that it may be uploaded to imgur
+    palette.save(image_name, format="JPEG")
+    #Closes the image after it has been opened by the palette.save() method
+    palette.close()
