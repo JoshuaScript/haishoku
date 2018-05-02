@@ -74,7 +74,7 @@ def joint_image(images):
         palette.paste(image, (init_ul, 0))
         init_ul += image.width
 
-    #Saves the generated image as a jpeg file so that it may be uploaded to imgur
-    palette.save(image_name, format="JPEG")
+    #Saves the generated image as a png file so that it may be uploaded to imgur
+    palette.save(image_name, format="PNG")
     #Closes the image after it has been opened by the palette.save() method
     palette.close()
