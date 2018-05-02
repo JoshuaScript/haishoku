@@ -76,7 +76,7 @@ from haishoku.haishoku import Haishoku
 Haishoku.showPalette( image )
 ```
 
-This method now saves the image of the palette as a .JPEG, instead of displaying a temporary .BMP image.<br/> The generated .JPEG can be accessed outside of the package like so:
+This method now saves the image of the palette as a .PNG, instead of displaying a temporary .BMP image.<br/> The generated .PNG can be accessed outside of the package like so:
 ```python
 from haishoku.haishoku import Haishoku
 import haishoku.haillow
